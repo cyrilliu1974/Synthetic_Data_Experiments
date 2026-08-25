@@ -42,19 +42,10 @@ the shipped artifacts.
 |   |-- jobs/                        request payloads as dispatched
 |   '-- responses/                   response payloads as returned
 |
-|-- code/                            source mirror preserving original import layout
-|   |-- failure_distribution/        verifier + pipeline + tests (importable package)
-|   '-- experiments/phase_c_validation/code/   Phase-C driver, probes, analysis tools
 '-- provenance/source_snapshot.json  provenance fingerprint of the source tree
+
+Source code is not included in this release and is available upon request for review purposes.
 ```
-
-### Path mapping note
-
-The analysis tooling reads/writes an `automatic_checks/` subdirectory inside a run directory. In
-this release those artifacts are organized as `analysis/` (and `verification/` for the raw verdicts),
-and `human_annotation_manifest.json` is renamed `stratification_manifest.json`. To re-run the
-shipped tools against a released cohort unchanged, create `automatic_checks/` (symlink or copy) or
-pass explicit paths as supported by each script.
 
 ---
 
@@ -140,35 +131,7 @@ human dimensions.
 
 ---
 
-## 4. Reproduction
-
-Requirements: Python 3.11+ (no external packages needed for the offline analysis path).
-
-```bash
-# Re-run the mechanical verifier on a cohort (expects data/generated.jsonl inside the run dir;
-# writes automatic_checks/verifier_results.jsonl - see path mapping note above)
-python code/experiments/phase_c_validation/code/verify.py --run-dir cohort_v2
-
-# Stratified gate analysis (Gates 1-3)
-python code/experiments/phase_c_validation/code/analyze.py --run-dir cohort_v2
-
-# Mutation probe (injects known defects; zero generation cost)
-python code/experiments/phase_c_validation/code/mutation_probe.py --run-dir cohort_v2
-
-# Surface-leakage probe (leave-one-domain-out Naive Bayes)
-python code/experiments/phase_c_validation/code/surface_leakage_probe.py --run-dir cohort_v2
-
-# Unit tests for the verifier package
-python -m unittest discover -s code/failure_distribution/tests
-```
-
-Regenerating cohorts requires LLM provider credentials and follows `frozen_spec_*.json`; the specs,
-driver (`run_main_frozen.py`), and provenance snapshot are included so runs are reproducible given
-equivalent model access. The shipped `generated.jsonl` is the frozen evidence itself.
-
----
-
-## 5. Integrity and disclosure notes
+## 4. Integrity and disclosure notes
 
 1. **Hash-bound envelopes are byte-intact.** Everything under `handoff_archive/` is cryptographic
    evidence: recorded hashes bind each job to its response. These files were copied without any
@@ -186,7 +149,7 @@ equivalent model access. The shipped `generated.jsonl` is the frozen evidence it
 
 ---
 
-## 6. Citation
+## 5. Citation
 
 If you use these artifacts, please cite the accompanying paper and this repository:
 
@@ -194,6 +157,6 @@ If you use these artifacts, please cite the accompanying paper and this reposito
 - Paper: *Mechanically Verified Synthetic Decision-Trajectory Data via Hash-Bound Handoff*
   (citation block to be finalized at publication).
 
-## 7. License
+## 6. License
 
 License to be added before public announcement (planned: permissive research license).
