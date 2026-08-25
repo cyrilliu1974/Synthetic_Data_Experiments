@@ -1,0 +1,43 @@
+{
+  "method": "leave-one-domain-out unigram Naive Bayes",
+  "chance": 0.5,
+  "probes": {
+    "surface_metadata": {
+      "description": "surface_text + endpoint flag (original Phase-C probe)",
+      "claim_use": "metadata separability; not semantic shortcut alone",
+      "per_heldout_domain_accuracy": {
+        "financial": 0.816,
+        "legal": 0.816,
+        "medical": 0.816
+      },
+      "overall_loo_accuracy": 0.816
+    },
+    "action_token": {
+      "description": "decision.action tokens only — domain action vocabulary separability",
+      "claim_use": "task-structure signal; high LOO expected for TECH-03 vs TECH-04 paths — NOT a generator defect",
+      "per_heldout_domain_accuracy": {
+        "financial": 0.429,
+        "legal": 0.429,
+        "medical": 0.429
+      },
+      "overall_loo_accuracy": 0.429
+    },
+    "narrative_only": {
+      "description": "content_output + rationale with action prefixes stripped",
+      "claim_use": "narrative shortcut test — closer to §3.6 semantic shortcut concern",
+      "per_heldout_domain_accuracy": {
+        "financial": 0.571,
+        "legal": 0.571,
+        "medical": 0.571
+      },
+      "overall_loo_accuracy": 0.571
+    }
+  },
+  "interpretation": "action_token LOO near 1.0 indicates separable domain action vocabularies, a normal task-structure effect; only narrative_only near 0.5 supports a no-narrative-shortcut claim.",
+  "per_heldout_domain_accuracy": {
+    "financial": 0.816,
+    "legal": 0.816,
+    "medical": 0.816
+  },
+  "overall_loo_accuracy": 0.816
+}

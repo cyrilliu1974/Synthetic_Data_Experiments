@@ -1,0 +1,5 @@
+{
+  "decision": "RESOLVE_slot_dependency",
+  "reason": "TECH-01 governs resolution of the active slot dependency constraint.",
+  "resolved_constraint": "slot_dependency"
+}

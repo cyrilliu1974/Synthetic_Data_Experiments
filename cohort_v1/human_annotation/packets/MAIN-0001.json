@@ -1,0 +1,570 @@
+{
+  "packet_id": "MAIN-0001",
+  "horizon": "short",
+  "surface_slot": "slot0#TECH-04.TECH-08",
+  "num_steps": 5,
+  "steps": [
+    {
+      "step_id": 1,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E1_INITIALIZE",
+        "resolved_constraints": [],
+        "active_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "pending_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "dependencies": {
+          "governing_legal_rule": [],
+          "material_facts": [],
+          "rule_application": [
+            "governing_legal_rule",
+            "material_facts"
+          ]
+        },
+        "blocking_constraint": "governing_legal_rule",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_governing_legal_rule"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {}
+      },
+      "decision": {
+        "action": "CHECK_INITIAL_STATE",
+        "target": "governing_legal_rule",
+        "reason": "Initialize the dependency ledger."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E1_INITIALIZE",
+        "resolved_constraints": [],
+        "active_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "pending_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "dependencies": {
+          "governing_legal_rule": [],
+          "material_facts": [],
+          "rule_application": [
+            "governing_legal_rule",
+            "material_facts"
+          ]
+        },
+        "blocking_constraint": "governing_legal_rule",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_governing_legal_rule"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {}
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 2,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E1_INITIALIZE",
+        "resolved_constraints": [],
+        "active_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "pending_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "dependencies": {
+          "governing_legal_rule": [],
+          "material_facts": [],
+          "rule_application": [
+            "governing_legal_rule",
+            "material_facts"
+          ]
+        },
+        "blocking_constraint": "governing_legal_rule",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_governing_legal_rule"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_governing_legal_rule for resolver target governing_legal_rule."
+          }
+        }
+      },
+      "decision": {
+        "action": "RESOLVE_governing_legal_rule",
+        "target": "governing_legal_rule",
+        "reason": "Resolve the governing legal rule from the ledger before applying facts; reject false authority shortcuts."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "governing_legal_rule"
+        ],
+        "active_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "pending_constraints": [
+          "material_facts",
+          "rule_application"
+        ],
+        "dependencies": {
+          "governing_legal_rule": [],
+          "material_facts": [],
+          "rule_application": [
+            "governing_legal_rule",
+            "material_facts"
+          ]
+        },
+        "blocking_constraint": "material_facts",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_governing_legal_rule"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_governing_legal_rule for resolver target governing_legal_rule."
+          }
+        }
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 3,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "governing_legal_rule"
+        ],
+        "active_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "pending_constraints": [
+          "material_facts",
+          "rule_application"
+        ],
+        "dependencies": {
+          "governing_legal_rule": [],
+          "material_facts": [],
+          "rule_application": [
+            "governing_legal_rule",
+            "material_facts"
+          ]
+        },
+        "blocking_constraint": "material_facts",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_governing_legal_rule"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_governing_legal_rule for resolver target governing_legal_rule."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts for resolver target material_facts."
+          }
+        }
+      },
+      "decision": {
+        "action": "RESOLVE_material_facts",
+        "target": "material_facts",
+        "reason": "Record material facts without rewriting prior ledger state, then preserve them for lawful rule application."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "governing_legal_rule",
+          "material_facts"
+        ],
+        "active_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "pending_constraints": [
+          "rule_application"
+        ],
+        "dependencies": {
+          "governing_legal_rule": [],
+          "material_facts": [],
+          "rule_application": [
+            "governing_legal_rule",
+            "material_facts"
+          ]
+        },
+        "blocking_constraint": "rule_application",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_governing_legal_rule"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_governing_legal_rule for resolver target governing_legal_rule."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts for resolver target material_facts."
+          }
+        }
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 4,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "governing_legal_rule",
+          "material_facts"
+        ],
+        "active_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "pending_constraints": [
+          "rule_application"
+        ],
+        "dependencies": {
+          "governing_legal_rule": [],
+          "material_facts": [],
+          "rule_application": [
+            "governing_legal_rule",
+            "material_facts"
+          ]
+        },
+        "blocking_constraint": "rule_application",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_governing_legal_rule"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_governing_legal_rule for resolver target governing_legal_rule."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts for resolver target material_facts."
+          }
+        }
+      },
+      "decision": {
+        "action": "RESOLVE_rule_application",
+        "target": "rule_application",
+        "reason": "Apply the governing rule to recorded material facts while preserving the legal ledger and rejecting shortcut equivalence."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E3_COMPLETE",
+        "resolved_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "active_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "pending_constraints": [],
+        "dependencies": {
+          "governing_legal_rule": [],
+          "material_facts": [],
+          "rule_application": [
+            "governing_legal_rule",
+            "material_facts"
+          ]
+        },
+        "blocking_constraint": null,
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_governing_legal_rule"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_governing_legal_rule for resolver target governing_legal_rule."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts for resolver target material_facts."
+          }
+        }
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": "terminal",
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E3_COMPLETE",
+        "resolved_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "active_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "pending_constraints": [],
+        "dependencies": {
+          "governing_legal_rule": [],
+          "material_facts": [],
+          "rule_application": [
+            "governing_legal_rule",
+            "material_facts"
+          ]
+        },
+        "blocking_constraint": null,
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_governing_legal_rule"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_governing_legal_rule for resolver target governing_legal_rule."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts for resolver target material_facts."
+          }
+        }
+      },
+      "decision": {
+        "action": "TERMINAL_DERIVED",
+        "target": null,
+        "reason": "All constraints are resolved."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E3_COMPLETE",
+        "resolved_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "active_constraints": [
+          "governing_legal_rule",
+          "material_facts",
+          "rule_application"
+        ],
+        "pending_constraints": [],
+        "dependencies": {
+          "governing_legal_rule": [],
+          "material_facts": [],
+          "rule_application": [
+            "governing_legal_rule",
+            "material_facts"
+          ]
+        },
+        "blocking_constraint": null,
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_governing_legal_rule"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_governing_legal_rule for resolver target governing_legal_rule."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts for resolver target material_facts."
+          }
+        },
+        "terminal_status": "TERMINAL_DERIVED"
+      },
+      "completion": {
+        "terminal": true,
+        "terminal_status": "TERMINAL_DERIVED",
+        "semantic_completion": true,
+        "state_completion": true
+      },
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    }
+  ]
+}

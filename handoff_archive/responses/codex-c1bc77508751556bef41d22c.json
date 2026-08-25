@@ -1,0 +1,39 @@
+{
+  "job_sha256": "781f24ef66e03c41ca8a330f3f6f60f0ff78cd36f09bbd9d0f81c0c18c74f432",
+  "request_id": "codex-c1bc77508751556bef41d22c",
+  "response": {
+    "blueprint": {
+      "analysis_sequence": [
+        "Identify controlling constraints.",
+        "Resolve prerequisite evidence.",
+        "Apply the supported conclusion."
+      ],
+      "domain_context": "medical",
+      "objective": "Assess the request through authority, material facts, procedure, and a supported conclusion."
+    },
+    "blueprint_ready": true,
+    "dependency_template": {
+      "blocking_constraint": "legal_authority_basis",
+      "dependencies": {
+        "legal_authority_basis": [],
+        "legal_conclusion_supported": [
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "material_facts_established": [
+          "legal_authority_basis"
+        ],
+        "procedural_requirements_met": [
+          "legal_authority_basis"
+        ]
+      },
+      "typical_active_constraints": [
+        "legal_authority_basis",
+        "material_facts_established",
+        "procedural_requirements_met",
+        "legal_conclusion_supported"
+      ]
+    }
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

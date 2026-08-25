@@ -1,0 +1,10 @@
+{
+  "job_sha256": "8e80cad0303bdd6e2330deab5d4726e097cc5a3414ef73d8bbb57a5eaaf105a8",
+  "request_id": "teacher-35bb106fcdc566063360f351",
+  "response": {
+    "decision": "RESOLVE_slot_dependency",
+    "reason": "TECH-01 governs resolution of the active slot dependency constraint.",
+    "resolved_constraint": "slot_dependency"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

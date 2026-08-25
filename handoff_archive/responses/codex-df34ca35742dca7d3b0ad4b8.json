@@ -1,0 +1,39 @@
+{
+  "job_sha256": "9a9a4ce11e798ce443226b20efeb7f6804f7f7884c761a3b33343c32e29cd80e",
+  "request_id": "codex-df34ca35742dca7d3b0ad4b8",
+  "response": {
+    "blueprint": {
+      "analysis_sequence": [
+        "Identify controlling constraints.",
+        "Resolve prerequisite evidence.",
+        "Apply the supported conclusion."
+      ],
+      "domain_context": "legal",
+      "objective": "Assess the request through authority, material facts, procedure, and a supported conclusion."
+    },
+    "blueprint_ready": true,
+    "dependency_template": {
+      "blocking_constraint": "legal_authority_basis",
+      "dependencies": {
+        "legal_authority_basis": [],
+        "legal_conclusion_supported": [
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "material_facts_established": [
+          "legal_authority_basis"
+        ],
+        "procedural_requirements_met": [
+          "legal_authority_basis"
+        ]
+      },
+      "typical_active_constraints": [
+        "legal_authority_basis",
+        "material_facts_established",
+        "procedural_requirements_met",
+        "legal_conclusion_supported"
+      ]
+    }
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

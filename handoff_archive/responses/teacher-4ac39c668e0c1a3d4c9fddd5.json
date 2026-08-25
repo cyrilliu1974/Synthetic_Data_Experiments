@@ -1,0 +1,10 @@
+{
+  "job_sha256": "44a6bdc4d06af481ff0ac7c8ef41775fc7da66904da3effe3d9b8b2a8e51a264",
+  "request_id": "teacher-4ac39c668e0c1a3d4c9fddd5",
+  "response": {
+    "decision": "RESOLVE_risk_limit_compliance",
+    "reason": "Confirmed risk limits against the reporting basis before recommendation.",
+    "resolved_constraint": "risk_limit_compliance"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

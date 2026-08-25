@@ -1,0 +1,5 @@
+{
+  "decision": "RESOLVE_governing_authority",
+  "reason": "TECH-04 requires resolving the recorded governing authority before dependent jurisdictional analysis.",
+  "resolved_constraint": "governing_authority"
+}

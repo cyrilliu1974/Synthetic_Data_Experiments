@@ -1,0 +1,10 @@
+{
+  "job_sha256": "00a633e080c94c43543619c8353a13162d9bb08ff9477e1897b61dfc025bb2a2",
+  "request_id": "teacher-0bbd02f3be60f6a2d02e79e9",
+  "response": {
+    "decision": "RESOLVE_evidentiary_record",
+    "reason": "The evidentiary record supports conclusions only after authority and jurisdictional scope have been resolved.",
+    "resolved_constraint": "evidentiary_record"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

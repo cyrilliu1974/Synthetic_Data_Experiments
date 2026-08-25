@@ -1,0 +1,40 @@
+{
+  "job_sha256": "606496a2685d5a10b75427d1fa72290b27220542c83badb0d537d7a43865b6fd",
+  "request_id": "codex-113e9cbc929a5c45e386d0de",
+  "response": {
+    "blueprint": {
+      "analysis_sequence": [
+        "Identify applicable clinical validation standard.",
+        "Verify patient-specific evidence against that standard.",
+        "Confirm safety and contraindication limits.",
+        "State only the recommendation supported by verified evidence."
+      ],
+      "domain_context": "medical",
+      "objective": "Evaluate a clinical scenario through validation standards, verified evidence, safety limits, and a supported recommendation."
+    },
+    "blueprint_ready": true,
+    "dependency_template": {
+      "blocking_constraint": "clinical_validation_basis",
+      "dependencies": {
+        "clinical_recommendation_supported": [
+          "patient_evidence_verified",
+          "safety_limits_confirmed"
+        ],
+        "clinical_validation_basis": [],
+        "patient_evidence_verified": [
+          "clinical_validation_basis"
+        ],
+        "safety_limits_confirmed": [
+          "clinical_validation_basis"
+        ]
+      },
+      "typical_active_constraints": [
+        "clinical_validation_basis",
+        "patient_evidence_verified",
+        "safety_limits_confirmed",
+        "clinical_recommendation_supported"
+      ]
+    }
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

@@ -1,0 +1,10 @@
+{
+  "job_sha256": "203a3c5056f296f936989cb92233c1c1bdcc5e0fdbb86c6d2d56a20c25299d75",
+  "request_id": "teacher-bf0b0f5b215e0c3dbdb1c3dc",
+  "response": {
+    "decision": "RESOLVE_patient_evidence_verified",
+    "reason": "Verified patient evidence against the established clinical validation basis.",
+    "resolved_constraint": "patient_evidence_verified"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

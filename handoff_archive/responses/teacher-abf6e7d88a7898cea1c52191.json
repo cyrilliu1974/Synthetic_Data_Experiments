@@ -1,0 +1,10 @@
+{
+  "job_sha256": "5b1b6a51ef19363c29ef89e3d7b82dac7008d74de86c2dd3a41f1a98e5d36498",
+  "request_id": "teacher-abf6e7d88a7898cea1c52191",
+  "response": {
+    "decision": "RESOLVE_legal_conclusion_supported",
+    "reason": "Applied the supported conclusion after prerequisites were resolved.",
+    "resolved_constraint": "legal_conclusion_supported"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

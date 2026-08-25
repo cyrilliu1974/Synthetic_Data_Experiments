@@ -1,0 +1,38 @@
+{
+  "job_sha256": "3e3ff8197bcf0c96554b5cbe46436663eb6d07d50d4739ca58b5caf34394e18e",
+  "request_id": "codex-c5a0b0de2722c32d00564fe2",
+  "response": {
+    "blueprint": {
+      "authority": "tgaa_core_logic",
+      "constraints": [
+        "governing_legal_rule",
+        "material_facts",
+        "rule_application"
+      ],
+      "design": "L2 legal-domain dependency graph"
+    },
+    "blueprint_ready": true,
+    "dependency_template": {
+      "blocking_constraint": "rule_application",
+      "dependencies": {
+        "governing_legal_rule": [],
+        "material_facts": [],
+        "rule_application": [
+          "governing_legal_rule",
+          "material_facts"
+        ]
+      },
+      "topological_order": [
+        "governing_legal_rule",
+        "material_facts",
+        "rule_application"
+      ],
+      "typical_active_constraints": [
+        "governing_legal_rule",
+        "material_facts",
+        "rule_application"
+      ]
+    }
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

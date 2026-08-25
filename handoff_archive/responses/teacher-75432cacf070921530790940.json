@@ -1,0 +1,10 @@
+{
+  "job_sha256": "6f3cc1a0e3e84222ef094738d18772dc6641c0bc9d30f18978995062211d20c3",
+  "request_id": "teacher-75432cacf070921530790940",
+  "response": {
+    "decision": "RESOLVE_governing_authority",
+    "reason": "TECH-04 requires resolving the recorded governing authority before dependent jurisdictional analysis.",
+    "resolved_constraint": "governing_authority"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

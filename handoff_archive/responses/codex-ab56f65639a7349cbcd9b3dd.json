@@ -1,0 +1,40 @@
+{
+  "job_sha256": "de3a77ffc5e452c30d8229224d8f57cdf65ccd8e8897479ca1c6a604feeed870",
+  "request_id": "codex-ab56f65639a7349cbcd9b3dd",
+  "response": {
+    "blueprint": {
+      "analysis_sequence": [
+        "Identify governing legal authority.",
+        "Establish material facts against that authority.",
+        "Confirm procedural requirements.",
+        "Reach only the conclusion supported by the established record."
+      ],
+      "domain_context": "legal",
+      "objective": "Assess a legal claim through governing authority, material facts, procedural requirements, and a supported conclusion."
+    },
+    "blueprint_ready": true,
+    "dependency_template": {
+      "blocking_constraint": "legal_authority_basis",
+      "dependencies": {
+        "legal_authority_basis": [],
+        "legal_conclusion_supported": [
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "material_facts_established": [
+          "legal_authority_basis"
+        ],
+        "procedural_requirements_met": [
+          "legal_authority_basis"
+        ]
+      },
+      "typical_active_constraints": [
+        "legal_authority_basis",
+        "material_facts_established",
+        "procedural_requirements_met",
+        "legal_conclusion_supported"
+      ]
+    }
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

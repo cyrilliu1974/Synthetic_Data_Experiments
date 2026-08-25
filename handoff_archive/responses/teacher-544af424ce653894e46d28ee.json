@@ -1,0 +1,10 @@
+{
+  "job_sha256": "ec8daff436bfea098b1867d0c9bfe791bb63f3012bafec8d8fade2c5fc9ef9e2",
+  "request_id": "teacher-544af424ce653894e46d28ee",
+  "response": {
+    "decision": "RESOLVE_risk_limit_compliance",
+    "reason": "Confirmed covenant, liquidity, and concentration limits against the reporting basis.",
+    "resolved_constraint": "risk_limit_compliance"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

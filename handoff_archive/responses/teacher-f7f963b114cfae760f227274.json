@@ -1,0 +1,10 @@
+{
+  "job_sha256": "2ef5fd4f59bde46b960089567227df076e96c1c5a5e9bd92e713a92a29db41de",
+  "request_id": "teacher-f7f963b114cfae760f227274",
+  "response": {
+    "decision": "RESOLVE_jurisdictional_scope",
+    "reason": "The applicable jurisdiction and procedural posture constrain analysis after governing authority is established.",
+    "resolved_constraint": "jurisdictional_scope"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

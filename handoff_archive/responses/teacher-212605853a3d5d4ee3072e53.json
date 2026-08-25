@@ -1,0 +1,10 @@
+{
+  "job_sha256": "aedfdcfcaea1614bd6f0debbebfa9e32d3ebd8da899865c5e7bff5cbfe4f3c2c",
+  "request_id": "teacher-212605853a3d5d4ee3072e53",
+  "response": {
+    "decision": "RESOLVE_governing_legal_rule",
+    "reason": "Resolve the governing legal rule from the ledger before applying facts; reject false authority shortcuts.",
+    "resolved_constraint": "governing_legal_rule"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

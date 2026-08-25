@@ -1,0 +1,10 @@
+{
+  "job_sha256": "df579afb93f69d10e609112772ab5bbd705b32ce5d90ed5167300f167a9d110f",
+  "request_id": "teacher-b721f10d822da93f70060097",
+  "response": {
+    "decision": "RESOLVE_legal_authority_basis",
+    "reason": "Resolved the blocking constraint using ledger carry-forward and dependency discipline.",
+    "resolved_constraint": "legal_authority_basis"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

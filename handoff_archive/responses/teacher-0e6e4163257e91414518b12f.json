@@ -1,0 +1,10 @@
+{
+  "job_sha256": "6df1da769b6c41219819104af6a92633ebafbe09dd00e3e68e6277bf1530f7d9",
+  "request_id": "teacher-0e6e4163257e91414518b12f",
+  "response": {
+    "decision": "RESOLVE_finance_recommendation_supported",
+    "reason": "Stated only the recommendation supported by verified inputs and limits.",
+    "resolved_constraint": "finance_recommendation_supported"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

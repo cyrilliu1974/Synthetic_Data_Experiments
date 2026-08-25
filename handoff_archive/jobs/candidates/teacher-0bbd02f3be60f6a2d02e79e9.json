@@ -1,0 +1,5 @@
+{
+  "decision": "RESOLVE_evidentiary_record",
+  "reason": "The evidentiary record supports conclusions only after authority and jurisdictional scope have been resolved.",
+  "resolved_constraint": "evidentiary_record"
+}

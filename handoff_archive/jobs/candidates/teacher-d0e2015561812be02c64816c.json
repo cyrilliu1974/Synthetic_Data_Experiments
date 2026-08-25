@@ -1,0 +1,5 @@
+{
+  "decision": "RESOLVE_slot_anchor",
+  "reason": "TECH-01 governs resolution of the active slot anchor constraint.",
+  "resolved_constraint": "slot_anchor"
+}

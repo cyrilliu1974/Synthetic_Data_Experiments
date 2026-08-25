@@ -1,0 +1,10 @@
+{
+  "job_sha256": "1a7810612e4ccf95fea4cb1efbeaa8a9a1412d507b1d7f2d3a40d4c9bb06fa21",
+  "request_id": "teacher-c1868a7d3dd3894179d2eaae",
+  "response": {
+    "decision": "RESOLVE_legal_conclusion_supported",
+    "reason": "Resolved through the deterministic dependency order and established supporting record.",
+    "resolved_constraint": "legal_conclusion_supported"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

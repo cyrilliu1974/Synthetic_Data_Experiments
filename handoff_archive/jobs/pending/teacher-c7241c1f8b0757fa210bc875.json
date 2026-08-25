@@ -1,0 +1,16 @@
+{
+  "blocking_constraint": "slot_anchor",
+  "controller_prompt": "prompts/codex_handoff_controller.md",
+  "job_sha256": "5b23f6e7c0e5107429151fc6f5878ec5cd606ed49cd4295fb0a72620b77e4c6c",
+  "kind": "teacher_decision",
+  "prompt": "Resolve exactly one dependency-graph constraint. Return JSON only.\ntask_context: Frozen-slot Phase-3 seam: {\"domain\": \"legal\", \"horizon\": \"short\", \"latent_task_id\": null, \"record_id\": \"MAIN-0003\", \"surface_variant\": null, \"trajectory_type\": \"Successful_Path\"}\ncurrent_state: {\"primary\":\"S2_SATISFIED\",\"execution_phase\":\"E1_INITIALIZE\",\"resolved_constraints\":[],\"active_constraints\":[\"slot_anchor\",\"slot_dependency\"],\"pending_constraints\":[\"slot_anchor\",\"slot_dependency\"],\"dependencies\":{\"slot_anchor\":[],\"slot_dependency\":[\"slot_anchor\"]},\"blocking_constraint\":\"slot_anchor\",\"conflicts\":[],\"variation_effect\":{},\"missing_critical_premises\":[],\"technique_effects\":{}}\nblocking_constraint: slot_anchor\ntechnique_combination: [TECH-01]\nApply the composed techniques' documented execution discipline for this step; your reason may state which technique governs resolving this constraint.\nschema: {\"decision\":\"RESOLVE_<constraint>\",\"reason\":\"<=20 words\",\"resolved_constraint\":\"<exact blocking_constraint>\"}",
+  "request_id": "teacher-c7241c1f8b0757fa210bc875",
+  "required_response": {
+    "decision": "RESOLVE_slot_anchor",
+    "reason": "A concise factual rationale of at most 20 words.",
+    "resolved_constraint": "slot_anchor"
+  },
+  "response_contract": "prompts/codex_response_contract.md",
+  "schema_version": "codex-handoff-request/v1",
+  "session_id": "codex-handoff-MAIN-0003"
+}

@@ -1,0 +1,10 @@
+{
+  "job_sha256": "da23efcf81d9443eb76e6b2308679508a2f5c88f45c09540698e4c0b5a4e9c15",
+  "request_id": "teacher-4fb997163170b066fb4fa99f",
+  "response": {
+    "decision": "RESOLVE_procedural_requirements_met",
+    "reason": "Confirmed procedural requirements under the authority basis.",
+    "resolved_constraint": "procedural_requirements_met"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

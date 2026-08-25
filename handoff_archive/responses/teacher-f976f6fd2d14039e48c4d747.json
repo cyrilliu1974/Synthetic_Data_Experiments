@@ -1,0 +1,10 @@
+{
+  "job_sha256": "7f0736da45bde9beaa57b4c05c90fb74e2a1c50d2bfbdac6f97f08dc1490b69e",
+  "request_id": "teacher-f976f6fd2d14039e48c4d747",
+  "response": {
+    "decision": "RESOLVE_rule_application",
+    "reason": "Apply the governing rule to recorded material facts while preserving the legal ledger and rejecting shortcut equivalence.",
+    "resolved_constraint": "rule_application"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

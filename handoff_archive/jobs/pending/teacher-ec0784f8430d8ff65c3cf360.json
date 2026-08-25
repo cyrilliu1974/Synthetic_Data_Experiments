@@ -1,0 +1,16 @@
+{
+  "blocking_constraint": "slot_dependency",
+  "controller_prompt": "prompts/codex_handoff_controller.md",
+  "job_sha256": "d4fe73f607e9dc72a0111cfb3c29dfde636fab2e6bf586afb9ba02c28ab88dc9",
+  "kind": "teacher_decision",
+  "prompt": "Resolve exactly one dependency-graph constraint. Return JSON only.\ntask_context: Frozen-slot Phase-3 seam: {\"domain\": \"legal\", \"horizon\": \"short\", \"latent_task_id\": null, \"record_id\": \"MAIN-0001\", \"surface_variant\": null, \"trajectory_type\": \"Successful_Path\"}\ncurrent_state: {\"primary\":\"S2_SATISFIED\",\"execution_phase\":\"E2_RESOLVE\",\"resolved_constraints\":[\"slot_anchor\"],\"active_constraints\":[\"slot_anchor\",\"slot_dependency\"],\"pending_constraints\":[\"slot_dependency\"],\"dependencies\":{\"slot_anchor\":[],\"slot_dependency\":[\"slot_anchor\"]},\"blocking_constraint\":\"slot_dependency\",\"conflicts\":[],\"variation_effect\":{},\"missing_critical_premises\":[],\"technique_effects\":{\"TECH-01\":{\"artifact_id\":\"TECH_EFFECT_TECH-01\",\"status\":\"manifested\",\"manifested_at_step\":2,\"effect\":\"TECH-01 manifested on RESOLVE_slot_anchor for resolver target slot_anchor.\"}}}\nblocking_constraint: slot_dependency\ntechnique_combination: [TECH-01]\nApply the composed techniques' documented execution discipline for this step; your reason may state which technique governs resolving this constraint.\nschema: {\"decision\":\"RESOLVE_<constraint>\",\"reason\":\"<=20 words\",\"resolved_constraint\":\"<exact blocking_constraint>\"}",
+  "request_id": "teacher-ec0784f8430d8ff65c3cf360",
+  "required_response": {
+    "decision": "RESOLVE_slot_dependency",
+    "reason": "A concise factual rationale of at most 20 words.",
+    "resolved_constraint": "slot_dependency"
+  },
+  "response_contract": "prompts/codex_response_contract.md",
+  "schema_version": "codex-handoff-request/v1",
+  "session_id": "codex-handoff-MAIN-0001"
+}

@@ -1,0 +1,10 @@
+{
+  "job_sha256": "08b8232101fdd92407a99ea1f19180968a60f10d6e9e317ba3da515058e683e1",
+  "request_id": "teacher-dc14a6367f88440d52e078f3",
+  "response": {
+    "decision": "RESOLVE_legal_authority_basis",
+    "reason": "Identify governing legal authority before establishing facts or procedural requirements.",
+    "resolved_constraint": "legal_authority_basis"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

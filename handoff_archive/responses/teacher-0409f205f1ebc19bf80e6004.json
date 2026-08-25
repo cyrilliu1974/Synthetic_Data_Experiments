@@ -1,0 +1,10 @@
+{
+  "job_sha256": "a0355b72f714e97e2d915450714bc0470a67d24dbdfe87f1bae1058bf506cc29",
+  "request_id": "teacher-0409f205f1ebc19bf80e6004",
+  "response": {
+    "decision": "RESOLVE_safety_limits_confirmed",
+    "reason": "Confirmed safety limits against the validation basis before recommendation.",
+    "resolved_constraint": "safety_limits_confirmed"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

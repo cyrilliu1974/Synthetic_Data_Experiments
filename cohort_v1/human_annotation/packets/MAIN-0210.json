@@ -1,0 +1,1130 @@
+{
+  "packet_id": "MAIN-0210",
+  "horizon": "long",
+  "surface_slot": "slot0#TECH-03.TECH-04.TECH-09.TECH-12",
+  "num_steps": 7,
+  "steps": [
+    {
+      "step_id": 1,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E1_INITIALIZE",
+        "resolved_constraints": [],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": "financial_reporting_basis",
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v1"
+        },
+        "pending_local_updates": [
+          {
+            "field": "status",
+            "version": "v2"
+          }
+        ],
+        "state_update_log": [],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {}
+      },
+      "decision": {
+        "action": "CHECK_INITIAL_STATE",
+        "target": "financial_reporting_basis",
+        "reason": "Initialize the dependency ledger."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E1_INITIALIZE",
+        "resolved_constraints": [],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": "financial_reporting_basis",
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v1"
+        },
+        "pending_local_updates": [
+          {
+            "field": "status",
+            "version": "v2"
+          }
+        ],
+        "state_update_log": [],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {}
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 2,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E1_INITIALIZE",
+        "resolved_constraints": [],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": "financial_reporting_basis",
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v1"
+        },
+        "pending_local_updates": [
+          {
+            "field": "status",
+            "version": "v2"
+          }
+        ],
+        "state_update_log": [],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {}
+      },
+      "decision": {
+        "action": "APPLY_LOCAL_UPDATE",
+        "target": "status",
+        "reason": "Apply the declared versioned update while preserving the dependency ledger."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E1_LOCAL_UPDATE_APPLIED",
+        "resolved_constraints": [],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": "financial_reporting_basis",
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v2"
+        },
+        "pending_local_updates": [],
+        "state_update_log": [
+          {
+            "field": "status",
+            "previous_version": "v1",
+            "current_version": "v2",
+            "scope": "local"
+          }
+        ],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {}
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 3,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E1_LOCAL_UPDATE_APPLIED",
+        "resolved_constraints": [],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": "financial_reporting_basis",
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v2"
+        },
+        "pending_local_updates": [],
+        "state_update_log": [
+          {
+            "field": "status",
+            "previous_version": "v1",
+            "current_version": "v2",
+            "scope": "local"
+          }
+        ],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {
+          "TECH-03": {
+            "artifact_id": "TECH_EFFECT_TECH-03",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-03 manifested on RESOLVE_financial_reporting_basis for resolver target financial_reporting_basis."
+          }
+        }
+      },
+      "decision": {
+        "action": "RESOLVE_financial_reporting_basis",
+        "target": "financial_reporting_basis",
+        "reason": "Named the reporting basis governing verified inputs before downstream finance constraints."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "financial_reporting_basis"
+        ],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [
+          "finance_recommendation_supported",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": "risk_limit_compliance",
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v2"
+        },
+        "pending_local_updates": [],
+        "state_update_log": [
+          {
+            "field": "status",
+            "previous_version": "v1",
+            "current_version": "v2",
+            "scope": "local"
+          }
+        ],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {
+          "TECH-03": {
+            "artifact_id": "TECH_EFFECT_TECH-03",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-03 manifested on RESOLVE_financial_reporting_basis for resolver target financial_reporting_basis."
+          }
+        }
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 4,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "financial_reporting_basis"
+        ],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [
+          "finance_recommendation_supported",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": "risk_limit_compliance",
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v2"
+        },
+        "pending_local_updates": [],
+        "state_update_log": [
+          {
+            "field": "status",
+            "previous_version": "v1",
+            "current_version": "v2",
+            "scope": "local"
+          }
+        ],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {
+          "TECH-03": {
+            "artifact_id": "TECH_EFFECT_TECH-03",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-03 manifested on RESOLVE_financial_reporting_basis for resolver target financial_reporting_basis."
+          },
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 4,
+            "effect": "TECH-04 manifested on RESOLVE_risk_limit_compliance for resolver target risk_limit_compliance."
+          }
+        }
+      },
+      "decision": {
+        "action": "RESOLVE_risk_limit_compliance",
+        "target": "risk_limit_compliance",
+        "reason": "Confirmed covenant, liquidity, and concentration limits against the reporting basis."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "financial_reporting_basis",
+          "risk_limit_compliance"
+        ],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [
+          "finance_recommendation_supported",
+          "verified_financial_inputs"
+        ],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": "verified_financial_inputs",
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v2"
+        },
+        "pending_local_updates": [],
+        "state_update_log": [
+          {
+            "field": "status",
+            "previous_version": "v1",
+            "current_version": "v2",
+            "scope": "local"
+          }
+        ],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {
+          "TECH-03": {
+            "artifact_id": "TECH_EFFECT_TECH-03",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-03 manifested on RESOLVE_financial_reporting_basis for resolver target financial_reporting_basis."
+          },
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 4,
+            "effect": "TECH-04 manifested on RESOLVE_risk_limit_compliance for resolver target risk_limit_compliance."
+          }
+        }
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 5,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "financial_reporting_basis",
+          "risk_limit_compliance"
+        ],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [
+          "finance_recommendation_supported",
+          "verified_financial_inputs"
+        ],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": "verified_financial_inputs",
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v2"
+        },
+        "pending_local_updates": [],
+        "state_update_log": [
+          {
+            "field": "status",
+            "previous_version": "v1",
+            "current_version": "v2",
+            "scope": "local"
+          }
+        ],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {
+          "TECH-03": {
+            "artifact_id": "TECH_EFFECT_TECH-03",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-03 manifested on RESOLVE_financial_reporting_basis for resolver target financial_reporting_basis."
+          },
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 4,
+            "effect": "TECH-04 manifested on RESOLVE_risk_limit_compliance for resolver target risk_limit_compliance."
+          },
+          "TECH-09": {
+            "artifact_id": "TECH_EFFECT_TECH-09",
+            "status": "manifested",
+            "manifested_at_step": 5,
+            "effect": "TECH-09 manifested on RESOLVE_verified_financial_inputs for resolver target verified_financial_inputs."
+          }
+        }
+      },
+      "decision": {
+        "action": "RESOLVE_verified_financial_inputs",
+        "target": "verified_financial_inputs",
+        "reason": "Verified material inputs and cash-flow assumptions against the reporting basis."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [
+          "finance_recommendation_supported"
+        ],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": "finance_recommendation_supported",
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v2"
+        },
+        "pending_local_updates": [],
+        "state_update_log": [
+          {
+            "field": "status",
+            "previous_version": "v1",
+            "current_version": "v2",
+            "scope": "local"
+          }
+        ],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {
+          "TECH-03": {
+            "artifact_id": "TECH_EFFECT_TECH-03",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-03 manifested on RESOLVE_financial_reporting_basis for resolver target financial_reporting_basis."
+          },
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 4,
+            "effect": "TECH-04 manifested on RESOLVE_risk_limit_compliance for resolver target risk_limit_compliance."
+          },
+          "TECH-09": {
+            "artifact_id": "TECH_EFFECT_TECH-09",
+            "status": "manifested",
+            "manifested_at_step": 5,
+            "effect": "TECH-09 manifested on RESOLVE_verified_financial_inputs for resolver target verified_financial_inputs."
+          }
+        }
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 6,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [
+          "finance_recommendation_supported"
+        ],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": "finance_recommendation_supported",
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v2"
+        },
+        "pending_local_updates": [],
+        "state_update_log": [
+          {
+            "field": "status",
+            "previous_version": "v1",
+            "current_version": "v2",
+            "scope": "local"
+          }
+        ],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {
+          "TECH-03": {
+            "artifact_id": "TECH_EFFECT_TECH-03",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-03 manifested on RESOLVE_financial_reporting_basis for resolver target financial_reporting_basis."
+          },
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 4,
+            "effect": "TECH-04 manifested on RESOLVE_risk_limit_compliance for resolver target risk_limit_compliance."
+          },
+          "TECH-09": {
+            "artifact_id": "TECH_EFFECT_TECH-09",
+            "status": "manifested",
+            "manifested_at_step": 5,
+            "effect": "TECH-09 manifested on RESOLVE_verified_financial_inputs for resolver target verified_financial_inputs."
+          },
+          "TECH-12": {
+            "artifact_id": "TECH_EFFECT_TECH-12",
+            "status": "manifested",
+            "manifested_at_step": 6,
+            "effect": "TECH-12 manifested on RESOLVE_finance_recommendation_supported for resolver target finance_recommendation_supported."
+          }
+        }
+      },
+      "decision": {
+        "action": "RESOLVE_finance_recommendation_supported",
+        "target": "finance_recommendation_supported",
+        "reason": "Stated the recommendation supported by verified inputs and risk limits."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E3_COMPLETE",
+        "resolved_constraints": [
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs",
+          "finance_recommendation_supported"
+        ],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": null,
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v2"
+        },
+        "pending_local_updates": [],
+        "state_update_log": [
+          {
+            "field": "status",
+            "previous_version": "v1",
+            "current_version": "v2",
+            "scope": "local"
+          }
+        ],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {
+          "TECH-03": {
+            "artifact_id": "TECH_EFFECT_TECH-03",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-03 manifested on RESOLVE_financial_reporting_basis for resolver target financial_reporting_basis."
+          },
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 4,
+            "effect": "TECH-04 manifested on RESOLVE_risk_limit_compliance for resolver target risk_limit_compliance."
+          },
+          "TECH-09": {
+            "artifact_id": "TECH_EFFECT_TECH-09",
+            "status": "manifested",
+            "manifested_at_step": 5,
+            "effect": "TECH-09 manifested on RESOLVE_verified_financial_inputs for resolver target verified_financial_inputs."
+          },
+          "TECH-12": {
+            "artifact_id": "TECH_EFFECT_TECH-12",
+            "status": "manifested",
+            "manifested_at_step": 6,
+            "effect": "TECH-12 manifested on RESOLVE_finance_recommendation_supported for resolver target finance_recommendation_supported."
+          }
+        }
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": "terminal",
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E3_COMPLETE",
+        "resolved_constraints": [
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs",
+          "finance_recommendation_supported"
+        ],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": null,
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v2"
+        },
+        "pending_local_updates": [],
+        "state_update_log": [
+          {
+            "field": "status",
+            "previous_version": "v1",
+            "current_version": "v2",
+            "scope": "local"
+          }
+        ],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {
+          "TECH-03": {
+            "artifact_id": "TECH_EFFECT_TECH-03",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-03 manifested on RESOLVE_financial_reporting_basis for resolver target financial_reporting_basis."
+          },
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 4,
+            "effect": "TECH-04 manifested on RESOLVE_risk_limit_compliance for resolver target risk_limit_compliance."
+          },
+          "TECH-09": {
+            "artifact_id": "TECH_EFFECT_TECH-09",
+            "status": "manifested",
+            "manifested_at_step": 5,
+            "effect": "TECH-09 manifested on RESOLVE_verified_financial_inputs for resolver target verified_financial_inputs."
+          },
+          "TECH-12": {
+            "artifact_id": "TECH_EFFECT_TECH-12",
+            "status": "manifested",
+            "manifested_at_step": 6,
+            "effect": "TECH-12 manifested on RESOLVE_finance_recommendation_supported for resolver target finance_recommendation_supported."
+          }
+        }
+      },
+      "decision": {
+        "action": "TERMINAL_DERIVED",
+        "target": null,
+        "reason": "All constraints are resolved."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E3_COMPLETE",
+        "resolved_constraints": [
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs",
+          "finance_recommendation_supported"
+        ],
+        "active_constraints": [
+          "finance_recommendation_supported",
+          "financial_reporting_basis",
+          "risk_limit_compliance",
+          "verified_financial_inputs"
+        ],
+        "pending_constraints": [],
+        "dependencies": {
+          "finance_recommendation_supported": [
+            "verified_financial_inputs",
+            "risk_limit_compliance"
+          ],
+          "financial_reporting_basis": [],
+          "risk_limit_compliance": [
+            "financial_reporting_basis"
+          ],
+          "verified_financial_inputs": [
+            "financial_reporting_basis"
+          ]
+        },
+        "blocking_constraint": null,
+        "conflicts": [],
+        "variation_effect": {
+          "updates": [
+            {
+              "field": "status",
+              "version": "v2"
+            }
+          ]
+        },
+        "missing_critical_premises": [],
+        "mutable_facts": {
+          "status": "v2"
+        },
+        "pending_local_updates": [],
+        "state_update_log": [
+          {
+            "field": "status",
+            "previous_version": "v1",
+            "current_version": "v2",
+            "scope": "local"
+          }
+        ],
+        "preserved_state_fields": [
+          "active_constraints",
+          "pending_constraints",
+          "dependencies",
+          "resolved_constraints"
+        ],
+        "technique_effects": {
+          "TECH-03": {
+            "artifact_id": "TECH_EFFECT_TECH-03",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-03 manifested on RESOLVE_financial_reporting_basis for resolver target financial_reporting_basis."
+          },
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 4,
+            "effect": "TECH-04 manifested on RESOLVE_risk_limit_compliance for resolver target risk_limit_compliance."
+          },
+          "TECH-09": {
+            "artifact_id": "TECH_EFFECT_TECH-09",
+            "status": "manifested",
+            "manifested_at_step": 5,
+            "effect": "TECH-09 manifested on RESOLVE_verified_financial_inputs for resolver target verified_financial_inputs."
+          },
+          "TECH-12": {
+            "artifact_id": "TECH_EFFECT_TECH-12",
+            "status": "manifested",
+            "manifested_at_step": 6,
+            "effect": "TECH-12 manifested on RESOLVE_finance_recommendation_supported for resolver target finance_recommendation_supported."
+          }
+        },
+        "terminal_status": "TERMINAL_DERIVED"
+      },
+      "completion": {
+        "terminal": true,
+        "terminal_status": "TERMINAL_DERIVED",
+        "semantic_completion": true,
+        "state_completion": true
+      },
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    }
+  ]
+}

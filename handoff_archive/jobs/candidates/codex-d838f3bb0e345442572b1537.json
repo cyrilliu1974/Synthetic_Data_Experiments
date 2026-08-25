@@ -1,0 +1,24 @@
+{
+  "blueprint": {
+    "scope": "Professional legal analysis applies governing authority to an evidentiary record within a defined jurisdiction.",
+    "constraints": [
+      "Identify the governing legal authority before analysis.",
+      "Constrain analysis to the applicable jurisdiction and procedural posture.",
+      "Ground conclusions in the available evidentiary record."
+    ]
+  },
+  "dependency_template": {
+    "dependencies": {
+      "governing_authority": [],
+      "jurisdictional_scope": ["governing_authority"],
+      "evidentiary_record": ["jurisdictional_scope"]
+    },
+    "typical_active_constraints": [
+      "governing_authority",
+      "jurisdictional_scope",
+      "evidentiary_record"
+    ],
+    "blocking_constraint": null
+  },
+  "blueprint_ready": true
+}

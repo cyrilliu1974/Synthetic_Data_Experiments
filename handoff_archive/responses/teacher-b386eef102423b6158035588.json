@@ -1,0 +1,10 @@
+{
+  "job_sha256": "13a9ee1e7b9d808bf8c2ce36dd19e2038c5d596107541ab3e7f3f058d0c4c9e1",
+  "request_id": "teacher-b386eef102423b6158035588",
+  "response": {
+    "decision": "RESOLVE_verified_financial_inputs",
+    "reason": "Verified material inputs and cash-flow assumptions against the reporting basis.",
+    "resolved_constraint": "verified_financial_inputs"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

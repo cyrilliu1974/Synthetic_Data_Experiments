@@ -1,0 +1,17 @@
+{
+  "n_valid_sampled": 30,
+  "sensitivity_by_kind": {
+    "skip_prerequisite": 1.0,
+    "false_terminal": 1.0,
+    "corrupt_lineage": 1.0
+  },
+  "n_skipped_by_kind": {
+    "skip_prerequisite": 0,
+    "false_terminal": 0,
+    "corrupt_lineage": 0
+  },
+  "overall_sensitivity": 1.0,
+  "specificity_reword": 1.0,
+  "specificity_surface": 1.0,
+  "expectation": "sensitivity ~1.0 (injected violations must be rejected); specificity ~1.0 (surface-only rewording must not flip verdicts)"
+}

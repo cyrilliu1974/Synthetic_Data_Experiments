@@ -1,0 +1,348 @@
+{
+  "gate1": {
+    "n_pairs": 54,
+    "design_role": "verifier_sensitivity_control",
+    "claim_forbidden": "Do not report this as full-method superiority over an independent generator baseline.",
+    "main_pass_rate": 1.0,
+    "main_pass_rate_ci": [
+      0.934,
+      1.0
+    ],
+    "control_pass_rate": 0.0,
+    "control_pass_rate_ci": [
+      0.0,
+      0.066
+    ],
+    "baseline_pass_rate": 0.0,
+    "baseline_pass_rate_ci": [
+      0.0,
+      0.066
+    ],
+    "paired_risk_difference": 1.0,
+    "paired_rd_ci": [
+      1.0,
+      1.0
+    ],
+    "mcnemar_b": 54,
+    "mcnemar_c": 0,
+    "mcnemar_p": 0.0,
+    "n_seed_compared": 54,
+    "n_seed_mismatch": 0,
+    "red_flags": []
+  },
+  "gate2": {
+    "n_latent_groups": 12,
+    "agreement_rate": 1.0,
+    "agreement_ci": [
+      0.757,
+      1.0
+    ],
+    "interpretation": "exact binomial CI; no large-sample approximation is pretended (study design doc, sec 4.6)"
+  },
+  "gate3": {
+    "n_batches": 3,
+    "per_batch_dist": {
+      "0": {
+        "HARD_PROHIBITION": 0.01,
+        "FIELD_ERROR": 0.01,
+        "Negative_trace": 0.01,
+        "UNRECOVERABLE": 0.01,
+        "PASS": 0.96
+      },
+      "1": {
+        "HARD_PROHIBITION": 0.01,
+        "FIELD_ERROR": 0.01,
+        "Negative_trace": 0.01,
+        "UNRECOVERABLE": 0.01,
+        "PASS": 0.96
+      },
+      "2": {
+        "HARD_PROHIBITION": 0.01,
+        "FIELD_ERROR": 0.01,
+        "Negative_trace": 0.01,
+        "UNRECOVERABLE": 0.01,
+        "PASS": 0.96
+      }
+    },
+    "max_js": 0.0,
+    "js_bootstrap_ci": [
+      0.0,
+      0.0
+    ],
+    "role": "reproducibility evidence (NOT primary result); report CI, do not assert <0.05 alone"
+  },
+  "mutation_probe": {
+    "n_valid_sampled": 30,
+    "sensitivity_by_kind": {
+      "skip_prerequisite": 1.0,
+      "false_terminal": 1.0,
+      "corrupt_lineage": 1.0
+    },
+    "n_skipped_by_kind": {
+      "skip_prerequisite": 0,
+      "false_terminal": 0,
+      "corrupt_lineage": 0
+    },
+    "overall_sensitivity": 1.0,
+    "specificity_reword": 1.0,
+    "specificity_surface": 1.0,
+    "expectation": "sensitivity ~1.0 (injected violations must be rejected); specificity ~1.0 (surface-only rewording must not flip verdicts)"
+  },
+  "surface_leakage": {
+    "method": "leave-one-domain-out unigram Naive Bayes",
+    "chance": 0.5,
+    "probes": {
+      "surface_metadata": {
+        "description": "surface_text + endpoint flag (original Phase-C probe)",
+        "claim_use": "metadata separability; not semantic shortcut alone",
+        "per_heldout_domain_accuracy": {
+          "financial": 0.816,
+          "legal": 0.816,
+          "medical": 0.816
+        },
+        "overall_loo_accuracy": 0.816
+      },
+      "action_token": {
+        "description": "decision.action tokens only — domain action vocabulary separability",
+        "claim_use": "task-structure signal; high LOO expected for TECH-03 vs TECH-04 paths — NOT a generator defect",
+        "per_heldout_domain_accuracy": {
+          "financial": 0.429,
+          "legal": 0.429,
+          "medical": 0.429
+        },
+        "overall_loo_accuracy": 0.429
+      },
+      "narrative_only": {
+        "description": "content_output + rationale with action prefixes stripped",
+        "claim_use": "narrative shortcut test — closer to §3.6 semantic shortcut concern",
+        "per_heldout_domain_accuracy": {
+          "financial": 0.571,
+          "legal": 0.571,
+          "medical": 0.571
+        },
+        "overall_loo_accuracy": 0.571
+      }
+    },
+    "interpretation": "action_token LOO near 1.0 indicates separable domain action vocabularies, a normal task-structure effect; only narrative_only near 0.5 supports a no-narrative-shortcut claim.",
+    "per_heldout_domain_accuracy": {
+      "financial": 0.816,
+      "legal": 0.816,
+      "medical": 0.816
+    },
+    "overall_loo_accuracy": 0.816
+  },
+  "human_agreement": {
+    "n": 36,
+    "by_dimension": {
+      "terminal": {
+        "human_human_kappa": 0.0,
+        "human_human_ci": [
+          0.0,
+          0.0
+        ],
+        "human_human_agreement": 0.667,
+        "human_human_note": null,
+        "verifier_human_kappa_a1": 1.0,
+        "verifier_human_ci_a1": [
+          1.0,
+          1.0
+        ],
+        "verifier_human_kappa_a2": 0.0,
+        "verifier_human_ci_a2": [
+          0.0,
+          0.0
+        ]
+      },
+      "first_error": {
+        "human_human_kappa": 0.0,
+        "human_human_ci": [
+          0.0,
+          0.0
+        ],
+        "human_human_agreement": 0.667,
+        "human_human_note": null,
+        "verifier_human_kappa_a1": 0.0,
+        "verifier_human_ci_a1": [
+          0.0,
+          0.0
+        ],
+        "verifier_human_kappa_a2": 1.0,
+        "verifier_human_ci_a2": [
+          1.0,
+          1.0
+        ]
+      },
+      "carryforward": {
+        "human_human_kappa": 1.0,
+        "human_human_ci": [
+          1.0,
+          1.0
+        ],
+        "human_human_agreement": 1.0,
+        "human_human_note": "perfect agreement (kappa undefined — zero marginal variance)",
+        "verifier_human_kappa_a1": 1.0,
+        "verifier_human_ci_a1": [
+          1.0,
+          1.0
+        ],
+        "verifier_human_kappa_a2": 1.0,
+        "verifier_human_ci_a2": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "n_manifest_strata": 36,
+    "disagreements": {
+      "terminal": [
+        {
+          "record_id": "MAIN-0172",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        },
+        {
+          "record_id": "MAIN-0179",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        },
+        {
+          "record_id": "MAIN-0185",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        },
+        {
+          "record_id": "MAIN-0189",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        },
+        {
+          "record_id": "MAIN-0040",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        },
+        {
+          "record_id": "MAIN-0043",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        },
+        {
+          "record_id": "MAIN-0039",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        },
+        {
+          "record_id": "MAIN-0032",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        },
+        {
+          "record_id": "MAIN-0118",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        },
+        {
+          "record_id": "MAIN-0112",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        },
+        {
+          "record_id": "MAIN-0107",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        },
+        {
+          "record_id": "MAIN-0103",
+          "a1": "1",
+          "a2": "0",
+          "v_terminal": "1"
+        }
+      ],
+      "first_error": [
+        {
+          "record_id": "MAIN-0172",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        },
+        {
+          "record_id": "MAIN-0179",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        },
+        {
+          "record_id": "MAIN-0185",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        },
+        {
+          "record_id": "MAIN-0189",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        },
+        {
+          "record_id": "MAIN-0040",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        },
+        {
+          "record_id": "MAIN-0043",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        },
+        {
+          "record_id": "MAIN-0039",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        },
+        {
+          "record_id": "MAIN-0032",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        },
+        {
+          "record_id": "MAIN-0118",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        },
+        {
+          "record_id": "MAIN-0112",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        },
+        {
+          "record_id": "MAIN-0107",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        },
+        {
+          "record_id": "MAIN-0103",
+          "a1": "1",
+          "a2": "0",
+          "v_first_error": "0"
+        }
+      ],
+      "carryforward": []
+    }
+  }
+}

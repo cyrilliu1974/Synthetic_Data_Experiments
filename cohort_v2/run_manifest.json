@@ -1,0 +1,12 @@
+{
+  "frozen_spec_version": "phase_c_frozen_v2",
+  "requested_total": 294,
+  "run_id": "phase-c-frozen-294-v2",
+  "run_root": "C:\\AI\\Synthetic_Data_LLM_Handoff\\result\\phase_c_frozen\\phase-c-frozen-294-v2",
+  "started_at": "2026-08-25T06:44:59.420242+00:00",
+  "completed_records": 294,
+  "failures": [],
+  "pending": null,
+  "development_limit": null,
+  "used_mock_override": false
+}

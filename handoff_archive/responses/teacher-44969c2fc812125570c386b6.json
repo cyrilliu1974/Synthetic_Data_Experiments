@@ -1,0 +1,10 @@
+{
+  "job_sha256": "d116a8c228a251287df52eac90ba6c269edbf3497c69a9f5cdfdee032f52100d",
+  "request_id": "teacher-44969c2fc812125570c386b6",
+  "response": {
+    "decision": "RESOLVE_material_facts",
+    "reason": "Record material facts without rewriting prior ledger state, then preserve them for lawful rule application.",
+    "resolved_constraint": "material_facts"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

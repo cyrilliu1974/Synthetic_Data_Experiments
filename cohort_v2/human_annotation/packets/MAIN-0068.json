@@ -1,0 +1,774 @@
+{
+  "packet_id": "MAIN-0068",
+  "horizon": "long",
+  "surface_slot": "slot0#TECH-04.TECH-08",
+  "num_steps": 6,
+  "steps": [
+    {
+      "step_id": 1,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E1_INITIALIZE",
+        "resolved_constraints": [],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": "legal_authority_basis",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {}
+      },
+      "decision": {
+        "action": "CHECK_INITIAL_STATE",
+        "target": "legal_authority_basis",
+        "reason": "Initialize the dependency ledger."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E1_INITIALIZE",
+        "resolved_constraints": [],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": "legal_authority_basis",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {}
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 2,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E1_INITIALIZE",
+        "resolved_constraints": [],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": "legal_authority_basis",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_legal_authority_basis for resolver target legal_authority_basis."
+          }
+        }
+      },
+      "decision": {
+        "action": "RESOLVE_legal_authority_basis",
+        "target": "legal_authority_basis",
+        "reason": "Established the controlling authority basis before resolving dependent constraints."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "legal_authority_basis"
+        ],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": "material_facts_established",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_legal_authority_basis for resolver target legal_authority_basis."
+          }
+        }
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 3,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "legal_authority_basis"
+        ],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": "material_facts_established",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_legal_authority_basis for resolver target legal_authority_basis."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts_established for resolver target material_facts_established."
+          }
+        }
+      },
+      "decision": {
+        "action": "RESOLVE_material_facts_established",
+        "target": "material_facts_established",
+        "reason": "Established material facts under the controlling authority basis."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "legal_authority_basis",
+          "material_facts_established"
+        ],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [
+          "legal_conclusion_supported",
+          "procedural_requirements_met"
+        ],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": "procedural_requirements_met",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_legal_authority_basis for resolver target legal_authority_basis."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts_established for resolver target material_facts_established."
+          }
+        }
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 4,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "legal_authority_basis",
+          "material_facts_established"
+        ],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [
+          "legal_conclusion_supported",
+          "procedural_requirements_met"
+        ],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": "procedural_requirements_met",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_legal_authority_basis for resolver target legal_authority_basis."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts_established for resolver target material_facts_established."
+          }
+        }
+      },
+      "decision": {
+        "action": "RESOLVE_procedural_requirements_met",
+        "target": "procedural_requirements_met",
+        "reason": "Confirmed procedural requirements under the authority basis."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "legal_authority_basis",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [
+          "legal_conclusion_supported"
+        ],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": "legal_conclusion_supported",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_legal_authority_basis for resolver target legal_authority_basis."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts_established for resolver target material_facts_established."
+          }
+        }
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": 5,
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E2_RESOLVE",
+        "resolved_constraints": [
+          "legal_authority_basis",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [
+          "legal_conclusion_supported"
+        ],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": "legal_conclusion_supported",
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_legal_authority_basis for resolver target legal_authority_basis."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts_established for resolver target material_facts_established."
+          }
+        }
+      },
+      "decision": {
+        "action": "RESOLVE_legal_conclusion_supported",
+        "target": "legal_conclusion_supported",
+        "reason": "Applied the supported conclusion after prerequisites were resolved."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E3_COMPLETE",
+        "resolved_constraints": [
+          "legal_authority_basis",
+          "material_facts_established",
+          "procedural_requirements_met",
+          "legal_conclusion_supported"
+        ],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": null,
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_legal_authority_basis for resolver target legal_authority_basis."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts_established for resolver target material_facts_established."
+          }
+        }
+      },
+      "completion": null,
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    },
+    {
+      "step_id": "terminal",
+      "state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E3_COMPLETE",
+        "resolved_constraints": [
+          "legal_authority_basis",
+          "material_facts_established",
+          "procedural_requirements_met",
+          "legal_conclusion_supported"
+        ],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": null,
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_legal_authority_basis for resolver target legal_authority_basis."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts_established for resolver target material_facts_established."
+          }
+        }
+      },
+      "decision": {
+        "action": "TERMINAL_DERIVED",
+        "target": null,
+        "reason": "All constraints are resolved."
+      },
+      "next_state": {
+        "primary": "S2_SATISFIED",
+        "execution_phase": "E3_COMPLETE",
+        "resolved_constraints": [
+          "legal_authority_basis",
+          "material_facts_established",
+          "procedural_requirements_met",
+          "legal_conclusion_supported"
+        ],
+        "active_constraints": [
+          "legal_authority_basis",
+          "legal_conclusion_supported",
+          "material_facts_established",
+          "procedural_requirements_met"
+        ],
+        "pending_constraints": [],
+        "dependencies": {
+          "legal_authority_basis": [],
+          "legal_conclusion_supported": [
+            "material_facts_established",
+            "procedural_requirements_met"
+          ],
+          "material_facts_established": [
+            "legal_authority_basis"
+          ],
+          "procedural_requirements_met": [
+            "legal_authority_basis"
+          ]
+        },
+        "blocking_constraint": null,
+        "conflicts": [],
+        "variation_effect": {
+          "distractors": [
+            "false_authority"
+          ],
+          "repair_events": [
+            "re_anchor_legal_authority_basis"
+          ]
+        },
+        "missing_critical_premises": [],
+        "conflict_markers": [
+          "false_authority"
+        ],
+        "repair_policy": "append_marker_preserve_resolved_history",
+        "technique_effects": {
+          "TECH-04": {
+            "artifact_id": "TECH_EFFECT_TECH-04",
+            "status": "manifested",
+            "manifested_at_step": 2,
+            "effect": "TECH-04 manifested on RESOLVE_legal_authority_basis for resolver target legal_authority_basis."
+          },
+          "TECH-08": {
+            "artifact_id": "TECH_EFFECT_TECH-08",
+            "status": "manifested",
+            "manifested_at_step": 3,
+            "effect": "TECH-08 manifested on RESOLVE_material_facts_established for resolver target material_facts_established."
+          }
+        },
+        "terminal_status": "TERMINAL_DERIVED"
+      },
+      "completion": {
+        "terminal": true,
+        "terminal_status": "TERMINAL_DERIVED",
+        "semantic_completion": true,
+        "state_completion": true
+      },
+      "invariant_check": {
+        "passed": true,
+        "violations": []
+      },
+      "content_output": ""
+    }
+  ]
+}

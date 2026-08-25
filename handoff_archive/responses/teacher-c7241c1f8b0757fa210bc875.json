@@ -1,0 +1,10 @@
+{
+  "job_sha256": "5b23f6e7c0e5107429151fc6f5878ec5cd606ed49cd4295fb0a72620b77e4c6c",
+  "request_id": "teacher-c7241c1f8b0757fa210bc875",
+  "response": {
+    "decision": "RESOLVE_slot_anchor",
+    "reason": "TECH-01 governs resolution of the active slot anchor constraint.",
+    "resolved_constraint": "slot_anchor"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

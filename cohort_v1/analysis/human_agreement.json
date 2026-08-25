@@ -1,0 +1,141 @@
+{
+  "n": 36,
+  "by_dimension": {
+    "terminal": {
+      "human_human_kappa": 0.0,
+      "human_human_ci": [
+        0.0,
+        0.0
+      ],
+      "human_human_agreement": 0.667,
+      "human_human_note": null,
+      "verifier_human_kappa_a1": 0.0,
+      "verifier_human_ci_a1": [
+        0.0,
+        0.0
+      ],
+      "verifier_human_kappa_a2": 1.0,
+      "verifier_human_ci_a2": [
+        1.0,
+        1.0
+      ]
+    },
+    "first_error": {
+      "human_human_kappa": 1.0,
+      "human_human_ci": [
+        1.0,
+        1.0
+      ],
+      "human_human_agreement": 1.0,
+      "human_human_note": null,
+      "verifier_human_kappa_a1": 1.0,
+      "verifier_human_ci_a1": [
+        1.0,
+        1.0
+      ],
+      "verifier_human_kappa_a2": 1.0,
+      "verifier_human_ci_a2": [
+        1.0,
+        1.0
+      ]
+    },
+    "carryforward": {
+      "human_human_kappa": 1.0,
+      "human_human_ci": [
+        1.0,
+        1.0
+      ],
+      "human_human_agreement": 1.0,
+      "human_human_note": "perfect agreement (kappa undefined — zero marginal variance)",
+      "verifier_human_kappa_a1": 1.0,
+      "verifier_human_ci_a1": [
+        1.0,
+        1.0
+      ],
+      "verifier_human_kappa_a2": 1.0,
+      "verifier_human_ci_a2": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "n_manifest_strata": 36,
+  "disagreements": {
+    "terminal": [
+      {
+        "record_id": "MAIN-0172",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      },
+      {
+        "record_id": "MAIN-0179",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      },
+      {
+        "record_id": "MAIN-0185",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      },
+      {
+        "record_id": "MAIN-0189",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      },
+      {
+        "record_id": "MAIN-0040",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      },
+      {
+        "record_id": "MAIN-0043",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      },
+      {
+        "record_id": "MAIN-0039",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      },
+      {
+        "record_id": "MAIN-0032",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      },
+      {
+        "record_id": "MAIN-0118",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      },
+      {
+        "record_id": "MAIN-0112",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      },
+      {
+        "record_id": "MAIN-0107",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      },
+      {
+        "record_id": "MAIN-0103",
+        "a1": "0",
+        "a2": "1",
+        "v_terminal": "1"
+      }
+    ],
+    "first_error": [],
+    "carryforward": []
+  }
+}

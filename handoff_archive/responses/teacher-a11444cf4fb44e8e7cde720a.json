@@ -1,0 +1,10 @@
+{
+  "job_sha256": "320edb77aa06b96530aa1325a5cb6e8844fb8e136d3891f29c64c4a43e2705ec",
+  "request_id": "teacher-a11444cf4fb44e8e7cde720a",
+  "response": {
+    "decision": "RESOLVE_clinical_validation_basis",
+    "reason": "Established the clinical validation basis before resolving dependent constraints.",
+    "resolved_constraint": "clinical_validation_basis"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

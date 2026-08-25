@@ -1,0 +1,10 @@
+{
+  "job_sha256": "4b3120ce995d492913589ec3f798fc9349c66e51cdcec674d17e0bd91d3815eb",
+  "request_id": "teacher-ed75905388e645781afc7cc3",
+  "response": {
+    "decision": "RESOLVE_verified_financial_inputs",
+    "reason": "Verified financial inputs against the established reporting basis.",
+    "resolved_constraint": "verified_financial_inputs"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

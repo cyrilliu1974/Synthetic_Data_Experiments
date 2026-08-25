@@ -1,0 +1,33 @@
+{
+  "job_sha256": "d841dc15471ca2847e2a3b3dd52e3f8bb3d57459aa2d47b18e92e998babd76e0",
+  "request_id": "codex-d838f3bb0e345442572b1537",
+  "response": {
+    "blueprint": {
+      "constraints": [
+        "Identify the governing legal authority before analysis.",
+        "Constrain analysis to the applicable jurisdiction and procedural posture.",
+        "Ground conclusions in the available evidentiary record."
+      ],
+      "scope": "Professional legal analysis applies governing authority to an evidentiary record within a defined jurisdiction."
+    },
+    "blueprint_ready": true,
+    "dependency_template": {
+      "blocking_constraint": null,
+      "dependencies": {
+        "evidentiary_record": [
+          "jurisdictional_scope"
+        ],
+        "governing_authority": [],
+        "jurisdictional_scope": [
+          "governing_authority"
+        ]
+      },
+      "typical_active_constraints": [
+        "governing_authority",
+        "jurisdictional_scope",
+        "evidentiary_record"
+      ]
+    }
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

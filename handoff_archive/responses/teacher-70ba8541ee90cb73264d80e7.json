@@ -1,0 +1,10 @@
+{
+  "job_sha256": "a9c60cdef0bab62cc5d7457b7946b47ccac2870d238ff2d6a8f0ea23f30bae5c",
+  "request_id": "teacher-70ba8541ee90cb73264d80e7",
+  "response": {
+    "decision": "RESOLVE_clinical_recommendation_supported",
+    "reason": "Stated only the recommendation supported by verified evidence and limits.",
+    "resolved_constraint": "clinical_recommendation_supported"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

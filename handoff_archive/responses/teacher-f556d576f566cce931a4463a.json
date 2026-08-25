@@ -1,0 +1,10 @@
+{
+  "job_sha256": "9c511061c9dfc156776d059645895c0c8ca3565d4e97d888be245f3f1ccdfb3e",
+  "request_id": "teacher-f556d576f566cce931a4463a",
+  "response": {
+    "decision": "RESOLVE_material_facts_established",
+    "reason": "Established material facts under the controlling authority basis.",
+    "resolved_constraint": "material_facts_established"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

@@ -1,0 +1,10 @@
+{
+  "job_sha256": "dc34a726a2eb5bab53de6527f15effcbbc5a0bbb4ba67de0506fb2db519d46ab",
+  "request_id": "teacher-8036f7a673ae8d23a16df1f1",
+  "response": {
+    "decision": "RESOLVE_legal_authority_basis",
+    "reason": "Established the controlling authority basis before resolving dependent constraints.",
+    "resolved_constraint": "legal_authority_basis"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

@@ -1,0 +1,185 @@
+{
+  "note": "Analyst-only stratification keys. Do not share with annotators.",
+  "records": [
+    {
+      "record_id": "MAIN-0172",
+      "domain": "financial",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0179",
+      "domain": "financial",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0185",
+      "domain": "financial",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0189",
+      "domain": "financial",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0196",
+      "domain": "financial",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0200",
+      "domain": "financial",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0212",
+      "domain": "financial",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0210",
+      "domain": "financial",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0158",
+      "domain": "financial",
+      "trajectory_type": "Successful_Path"
+    },
+    {
+      "record_id": "MAIN-0163",
+      "domain": "financial",
+      "trajectory_type": "Successful_Path"
+    },
+    {
+      "record_id": "MAIN-0162",
+      "domain": "financial",
+      "trajectory_type": "Successful_Path"
+    },
+    {
+      "record_id": "MAIN-0168",
+      "domain": "financial",
+      "trajectory_type": "Successful_Path"
+    },
+    {
+      "record_id": "MAIN-0040",
+      "domain": "legal",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0043",
+      "domain": "legal",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0039",
+      "domain": "legal",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0032",
+      "domain": "legal",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0049",
+      "domain": "legal",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0068",
+      "domain": "legal",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0051",
+      "domain": "legal",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0052",
+      "domain": "legal",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0010",
+      "domain": "legal",
+      "trajectory_type": "Successful_Path"
+    },
+    {
+      "record_id": "MAIN-0004",
+      "domain": "legal",
+      "trajectory_type": "Successful_Path"
+    },
+    {
+      "record_id": "MAIN-0015",
+      "domain": "legal",
+      "trajectory_type": "Successful_Path"
+    },
+    {
+      "record_id": "MAIN-0001",
+      "domain": "legal",
+      "trajectory_type": "Successful_Path"
+    },
+    {
+      "record_id": "MAIN-0118",
+      "domain": "medical",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0112",
+      "domain": "medical",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0107",
+      "domain": "medical",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0103",
+      "domain": "medical",
+      "trajectory_type": "Counterfactual_Near_Miss"
+    },
+    {
+      "record_id": "MAIN-0133",
+      "domain": "medical",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0129",
+      "domain": "medical",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0132",
+      "domain": "medical",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0144",
+      "domain": "medical",
+      "trajectory_type": "Repair_Path"
+    },
+    {
+      "record_id": "MAIN-0089",
+      "domain": "medical",
+      "trajectory_type": "Successful_Path"
+    },
+    {
+      "record_id": "MAIN-0093",
+      "domain": "medical",
+      "trajectory_type": "Successful_Path"
+    },
+    {
+      "record_id": "MAIN-0075",
+      "domain": "medical",
+      "trajectory_type": "Successful_Path"
+    },
+    {
+      "record_id": "MAIN-0096",
+      "domain": "medical",
+      "trajectory_type": "Successful_Path"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "job_sha256": "1b6398df0774a5a095e32d9730eb1b5abfc22964a19131ac8a72390ed7ce54bc",
+  "request_id": "teacher-d2e044be046b1386c4542d69",
+  "response": {
+    "decision": "RESOLVE_financial_reporting_basis",
+    "reason": "Identified the applicable reporting standard governing the finance scenario inputs.",
+    "resolved_constraint": "financial_reporting_basis"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

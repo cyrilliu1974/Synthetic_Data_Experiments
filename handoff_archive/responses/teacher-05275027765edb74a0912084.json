@@ -1,0 +1,10 @@
+{
+  "job_sha256": "5919122c03c2485397cecdb23e51c22cb18e304964fed63b1055b08f79ca6d11",
+  "request_id": "teacher-05275027765edb74a0912084",
+  "response": {
+    "decision": "RESOLVE_financial_reporting_basis",
+    "reason": "Named the reporting basis governing verified inputs before downstream finance constraints.",
+    "resolved_constraint": "financial_reporting_basis"
+  },
+  "schema_version": "codex-handoff-response/v1"
+}

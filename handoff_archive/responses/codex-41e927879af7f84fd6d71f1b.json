@@ -1,0 +1,40 @@
+{
+  "job_sha256": "c251bbb8c91c89272d5c80f71783655e482a3242fce59227174a366d5c588d04",
+  "request_id": "codex-41e927879af7f84fd6d71f1b",
+  "response": {
+    "blueprint": {
+      "analysis_sequence": [
+        "Identify the governing financial reporting or valuation standard.",
+        "Verify material inputs and cash-flow assumptions against that standard.",
+        "Check covenant, liquidity, and concentration limits.",
+        "State only the recommendation supported by the verified record."
+      ],
+      "domain_context": "finance",
+      "objective": "Evaluate a finance scenario through applicable reporting standards, verified inputs, risk limits, and a supported recommendation."
+    },
+    "blueprint_ready": true,
+    "dependency_template": {
+      "blocking_constraint": "financial_reporting_basis",
+      "dependencies": {
+        "finance_recommendation_supported": [
+          "verified_financial_inputs",
+          "risk_limit_compliance"
+        ],
+        "financial_reporting_basis": [],
+        "risk_limit_compliance": [
+          "financial_reporting_basis"
+        ],
+        "verified_financial_inputs": [
+          "financial_reporting_basis"
+        ]
+      },
+      "typical_active_constraints": [
+        "financial_reporting_basis",
+        "verified_financial_inputs",
+        "risk_limit_compliance",
+        "finance_recommendation_supported"
+      ]
+    }
+  },
+  "schema_version": "codex-handoff-response/v1"
+}
